@@ -1,0 +1,191 @@
+/*  
+Sticky Footer Solution
+by Steve Hatcher 
+http://stever.ca
+http://www.cssstickyfooter.com
+ */
+
+* {margin:0;padding:0;} 
+
+/* must declare 0 margins on everything, also for main layout components use padding, not 
+vertical margins (top and bottom) to add spacing, else those margins get added to total height 
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+html, body, #wrap {height: 100%;}
+
+body > #wrap {height: auto; min-height: 100%;}
+
+#main {padding-bottom: 118px;}  /* must be same height as the footer */
+
+/* CLEAR FIX*/
+.clearfix:after {content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+/* GENERAL*/
+a { color: #BED730; }
+a:hover, a:focus { color: #BED730; }
+a:hover, a:active { outline: none; }
+a:active, input.button:active { outline: 0; position: relative; top: 1px; }
+
+::-moz-selection { text-shadow: none; background: #888; color: #fff; }
+::selection { text-shadow: none; background: #888; color: #fff; }
+a:link { -webkit-tap-highlight-color: #888; }
+
+/* FOOTER*/
+#footer-bar {
+  clear: both;
+  margin-top: -118px; /* negative value of footer height */
+  height: 118px;
+  background: #1F1F1F;
+  -moz-box-shadow: 0 0 25px 5px rgba(0,0,0,0.8);
+  -webkit-box-shadow: 0 0 25px 5px rgba(0,0,0,0.8);
+  box-shadow: 0 0 25px 5px rgba(0,0,0,0.8);
+}
+
+#content-info { 
+  height: 118px;
+  color: white;
+}
+
+#content-info .copyright {
+  left: 0px;
+  top: 35px;
+  position: absolute;
+}
+
+#content-info img { 
+  margin-top: 25px;
+}
+
+#nav-footer ul { 
+  left: 0px;
+  top: 52px;
+  position: relative; 
+  list-style: none; 
+  margin: 0 0 16px 0; 
+  padding: 0;
+  float: left; 
+  width: 100%;
+}
+#nav-footer ul li {
+  float: left; margin: 0;
+  text-decoration: none;
+  padding-right: 20px;
+}
+
+#nav-footer ul li a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  margin: 0;
+}
+
+#nav-footer ul li a:hover {
+  color: #BED730;
+}
+
+#nav-footer ul li.current_page_item > a {
+  pointer-events: none;
+  cursor: default;
+  color: #BED730;
+}
+
+/* TESTING STUFF*/
+.test {
+  background: lime;
+}
+
+/* HEADER*/
+
+#header-bar {
+  clear: both;
+  height: 10px;
+  background: #1F1F1F;
+  -moz-box-shadow: 0 0 25px 5px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 0 25px 5px rgba(0,0,0,0.5);
+  box-shadow: 0 0 25px 5px rgba(0,0,0,0.5);
+}
+
+#banner {
+  margin: 0;
+}
+
+#nav-main {
+  background: #1F1F1F;
+  background-image: auto;
+  width: auto;
+  -webkit-border-bottom-right-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  float: right;
+}
+
+#nav-main ul { 
+  position: relative; 
+  list-style: none; 
+  margin: 0 0 16px 0; 
+  padding: 10px 20px 0 20px;
+  float: left; 
+  width: 100%;
+  background: transparent;
+  background-image: auto;
+}
+
+#nav-main ul li {
+  float: left; margin: 0;
+  text-decoration: none;
+}
+
+#nav-main ul li a {
+  text-transform: uppercase;
+  font-size: 100%;
+  text-decoration: none;
+  display: block;
+  color: #616161;
+  margin: 0;
+  padding: 0 15px 0 15px;
+  border-left: 2px solid #616161;
+}
+
+#nav-main ul li:first-child a {
+  border: none;
+}
+
+#nav-main ul li a:hover {
+  color: #BED730;
+}
+
+#nav-main ul li.current_page_item > a {
+  pointer-events: none;
+  cursor: default;
+  color: #BED730;
+}
+
+#nav-main ul li a:hover, 
+#nav-main ul li:hover > a { 
+  color: #BED730;
+}
+
+#logo {
+  margin-left: 35px;
+  margin-top: 46px;
+}
+
+header h2 {
+  clear: both;
+  text-align: center;
+  font-size: 22px;
+  color: #616161;
+  padding: 20px 0 0 0
+}
