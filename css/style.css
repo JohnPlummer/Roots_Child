@@ -131,11 +131,16 @@ a:link { -webkit-tap-highlight-color: #888; }
   float: right;
 }
 
+#right-curve,
+#left-curve {
+  float: right;
+}
+
 #nav-main ul { 
   position: relative; 
   list-style: none; 
-  margin: 0 0 16px 0; 
-  padding: 10px 20px 0 20px;
+  margin: 0 0 0 0; 
+  padding: 15px 20px 10px 20px;
   float: left; 
   width: 100%;
   background: transparent;
@@ -152,9 +157,9 @@ a:link { -webkit-tap-highlight-color: #888; }
   font-size: 100%;
   text-decoration: none;
   display: block;
-  color: #616161;
+  color: #999;
   margin: 0;
-  padding: 0 15px 0 15px;
+  padding: 0 17px 0 17px;
   border-left: 2px solid #616161;
 }
 
@@ -162,9 +167,9 @@ a:link { -webkit-tap-highlight-color: #888; }
   border: none;
 }
 
-#nav-main ul li a:hover {
-  color: #BED730;
-}
+/* #nav-main ul li a:hover {*/
+/*   color: #BED730;*/
+/* }*/
 
 #nav-main ul li.current_page_item > a {
   pointer-events: none;
@@ -172,20 +177,28 @@ a:link { -webkit-tap-highlight-color: #888; }
   color: #BED730;
 }
 
-#nav-main ul li a:hover, 
+/* #nav-main ul li a:hover, */
 #nav-main ul li:hover > a { 
   color: #BED730;
 }
 
+#green-flash {
+  width: 168px;
+  height: 10px;
+  margin-left: 35px;
+  margin-top: -10px;
+  background: #BED730;
+}
+
 #logo {
   margin-left: 35px;
-  margin-top: 46px;
+  margin-top: 40px;
 }
 
 header h2 {
   clear: both;
-  text-align: center;
+  /* text-align: center;*/
   font-size: 22px;
   color: #616161;
-  padding: 20px 0 0 0
+  padding: 40px 0 0 30px;
 }

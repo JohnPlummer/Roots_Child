@@ -17,6 +17,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr-1.7.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <script>window.jQuery || document.write("<script src='<?php echo get_template_directory_uri(); ?>/js/libs/jquery-1.5.2.min.js'>\x3C/script>")</script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/scripts.js"></script>
 
 <?php wp_head(); ?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
@@ -36,13 +37,16 @@ s.parentNode.insertBefore(g,s)}(document,"script"));
       <div class="container">
         <header id="banner" class="<?php echo roots_container_class; ?>" role="banner">
         <div class="span-5">
+          <div id="green-flash"></div>
           <a id="logo" href="<?php echo home_url(); ?>/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" width="168" height="87" alt="<?php bloginfo('name'); ?>"></a>
         </div><!--/.span-5-->
         <div class="span-19 last">
+          <canvas id="right-curve" width="14" height="14"></canvas>
           <nav id="nav-main" class="<?php echo roots_container_class; ?>" role="navigation">
           <?php wp_nav_menu(array('theme_location' => 'primary_navigation')); ?>
           </nav>
+          <canvas id="left-curve" width="14" height="14"></canvas>
           <h2>The Command Centre For Your Startup</h2>
-        </div><!--/.span-17-->
+        </div><!--/.span-19-->
         </header>
       </div><!-- /.container -->
