@@ -11,11 +11,11 @@ http://www.cssstickyfooter.com
 vertical margins (top and bottom) to add spacing, else those margins get added to total height 
 and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
 
-html, body, #wrap {height: 100%;}
+html, body, #wrap {height: 100%; }
 
 body > #wrap {height: auto; min-height: 100%;}
 
-#main {padding-bottom: 118px;}  /* must be same height as the footer */
+#main {padding-bottom: 118px; }  /* must be same height as the footer */
 
 /* CLEAR FIX*/
 .clearfix:after {content: ".";
@@ -73,7 +73,6 @@ a:link { -webkit-tap-highlight-color: #888; }
   margin: 0 0 16px 0; 
   padding: 0;
   float: left; 
-  width: 100%;
 }
 #nav-footer ul li {
   float: left; margin: 0;
@@ -106,7 +105,6 @@ a:link { -webkit-tap-highlight-color: #888; }
 /* HEADER*/
 
 #header-bar {
-  clear: both;
   height: 10px;
   background: #1F1F1F;
   -moz-box-shadow: 0 0 25px 5px rgba(0,0,0,0.5);
