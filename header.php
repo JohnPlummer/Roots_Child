@@ -30,7 +30,7 @@ s.parentNode.insertBefore(g,s)}(document,"script"));
 </head>
 <body <?php $page_slug = $post->post_name; body_class($page_slug); ?>>
   <div id="wrap" role="document">
-    <div id="main">
+    <div id="content-less-footer">
       <div id="header-bar"></div>
       <div class="container">
         <header id="banner" class="<?php echo roots_container_class; ?>" role="banner">

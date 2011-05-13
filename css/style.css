@@ -15,7 +15,7 @@ html, body, #wrap {height: 100%; }
 
 body > #wrap {height: auto; min-height: 100%;}
 
-#main {padding-bottom: 118px; }  /* must be same height as the footer */
+#content-less-footer {padding-bottom: 118px; }  /* must be same height as the footer */
 
 /* CLEAR FIX*/
 .clearfix:after {content: ".";
