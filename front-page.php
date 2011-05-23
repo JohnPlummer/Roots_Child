@@ -18,7 +18,7 @@
       on how Furld is coming along and what really great features there are.</p>
       <div class="divider"></div>
       <form name="emailform" id="emailform">
-        <input type="text" name="mail" id="mail" value="Enter your email address here"/>
+        <input type="text" name="mail" id="mail" placeholder="Enter your email address here"/>
         <a href="#" class="big-button">
           <span>
             <strong>Get Early Access</strong>
