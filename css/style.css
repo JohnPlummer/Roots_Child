@@ -39,6 +39,58 @@ a:active, input.button:active { outline: 0; position: relative; top: 1px; }
 ::selection { text-shadow: none; background: #888; color: #fff; }
 a:link { -webkit-tap-highlight-color: #888; }
 
+body {
+  text-align: center;
+}
+
+div#wrap {
+  text-align: left;
+}
+
+body, textarea {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: small;
+  color: #433F40;
+}
+
+div.unboxed {
+  padding: 13px;
+}
+
+div.boxed {
+  padding: 12px;
+  border: 1px solid #EEE;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-box-shadow: 1px -1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 1px -1px 2px rgba(0,0,0,0.1);
+  box-shadow: 1px -1px 2px rgba(0,0,0,0.1);
+}
+
+div.divider {
+  height: 1px;
+  background: #EEE;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+div.large-divider {
+  clear: both;
+  background: -webkit-gradient(radial, center -1200, 10, center -1200, 1230, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)), color-stop(90%, rgba(0, 0, 0, 0.1)));
+  background: -webkit-radial-gradient(center -1200px, circle, rgba(0, 0, 0, 1) 10px, rgba(0, 0, 0, 0.1) 90%, rgba(0, 0, 0, 0) 1230px);
+  background: -moz-radial-gradient(center -1200px, circle, rgba(0, 0, 0, 1) 10px, rgba(0, 0, 0, 0.1) 90%, rgba(0, 0, 0, 0) 1230px);
+  /*   background:    -moz-radial-gradient(45px 45px 45deg, circle cover, aqua 0%, rgba(0, 0, 255, 0) 100%, blue 95%);*/
+  /* background-image: -webkit-radial-gradient(50% 50%, circle cover, black 0%, black 100%);*/
+  /* background-image: -moz-radial-gradient(50% 50%, circle cover, black 0%, black 100%);*/
+  /* background-image: -webkit-radial-gradient(10px 10px 45deg, circle, cover, black, white);*/
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
 /* FOOTER*/
 #footer-bar {
   clear: both;
@@ -114,6 +166,7 @@ a:link { -webkit-tap-highlight-color: #888; }
 
 #banner {
   margin: 0;
+  height: 155px;
 }
 
 #nav-main {
@@ -151,11 +204,11 @@ a:link { -webkit-tap-highlight-color: #888; }
 }
 
 #nav-main ul li a {
+  color: #999;
+  font-size: small;
   text-transform: uppercase;
-  font-size: 100%;
   text-decoration: none;
   display: block;
-  color: #999;
   margin: 0;
   padding: 0 17px 0 17px;
   border-left: 2px solid #616161;
@@ -193,10 +246,84 @@ a:link { -webkit-tap-highlight-color: #888; }
   margin-top: 40px;
 }
 
-header h2 {
+header h1 {
   clear: both;
-  /* text-align: center;*/
-  font-size: 22px;
+  font-size: x-large;
   color: #616161;
   padding: 40px 0 0 30px;
 }
+
+/* FRONT PAGE*/
+
+
+.hero-shot img {
+  vertical-align: middle;
+}
+
+.hero-copy h1 {
+  font-size: large;
+}
+
+.big-button{
+  text-align: center;
+  display: inline-block;
+  background-color: #BED730;
+  padding: 12px;
+  border: none;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.big-button span strong {
+  text-transform: uppercase;
+  font-size: large;
+}
+
+.big-button a,
+.big-button a:hover,
+.big-button span {
+  text-decoration: none;
+  color: black;
+}
+
+#content input {
+border: #DADADA 1px solid;
+width: 245px;
+height: 32px;
+margin-bottom: 18px;
+color: #969696;
+padding-left: 18px;
+}
+
+div.quotes {
+  color: #616161;
+  padding: 20px;
+}
+
+div.benefits {
+  color: #616161;
+}
+
+div.benefits ul {
+  list-style: none;
+}
+
+div.benefits li {
+  margin-top: 20px;
+}
+
+div.benefits li:first-child {
+  margin-top: 0;
+}
+
+div.benefits h2 {
+  color: #616161;
+  font-size: large;
+  display: inline;
+  border-right: 3px solid #616161;
+  font-weight: bold;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+

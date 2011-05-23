@@ -7,7 +7,7 @@
           <meta charset="utf-8">
           <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
           <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
-          
+
           <?php echo get_stylesheets(); ?>
 
           <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
@@ -44,7 +44,10 @@ s.parentNode.insertBefore(g,s)}(document,"script"));
           <?php wp_nav_menu(array('theme_location' => 'primary_navigation')); ?>
           </nav>
           <canvas id="left-curve" width="14" height="14"></canvas>
-          <h2>The Command Centre For Your Startup</h2>
+          <h1>The Command Centre For Your Startup</h1>
         </div><!--/.span-19-->
         </header>
       </div><!-- /.container -->
+      <div class="container">
+        <div id="content" class="<?php echo roots_container_class; ?>">	
+          <div id="main" role="main">

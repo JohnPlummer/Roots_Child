@@ -1,3 +1,6 @@
+</div><!-- /#main -->
+    </div><!-- /#content -->
+  </div><!-- /.container -->
 </div><!-- #main -->
 </div><!-- #wrap -->
 <div id="footer-bar">
