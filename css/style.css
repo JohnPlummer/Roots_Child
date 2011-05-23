@@ -264,7 +264,23 @@ header h1 {
   font-size: large;
 }
 
-.big-button{
+.big-button {
+  display: inline-block;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow:
+    0 8px 0 #ADC600,
+    0 15px 20px rgba(0,0,0,.35);
+  -moz-box-shadow:
+    0 8px 0 #ADC600,
+    0 15px 20px rgba(0,0,0,.35);
+  box-shadow:
+    0 8px 0 #ADC600,
+    0 15px 20px rgba(0,0,0,.35);
+}
+
+.big-button span{
   text-align: center;
   display: inline-block;
   background-color: #BED730;
@@ -273,6 +289,25 @@ header h1 {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
+}
+
+.big-button:active {
+  -webkit-box-shadow:
+    0 8px 0 #ADC600,
+    0 12px 10px rgba(0,0,0,.3);
+  -moz-box-shadow:
+    0 8px 0 #ADC600,
+    0 12px 10px rgba(0,0,0,.3);
+  box-shadow:
+    0 8px 0 #ADC600,
+    0 12px 10px rgba(0,0,0,.3);
+}
+
+.big-button:active span {
+  -webkit-transform: translate(0, 4px);
+  -moz-transform: translate(0, 4px);
+  -o-transform: translate(0, 4px);
+  transform: translate(0, 4px);
 }
 
 .big-button span strong {
