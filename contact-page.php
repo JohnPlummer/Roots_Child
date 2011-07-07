@@ -5,14 +5,14 @@ Template Name: Contact Page
 get_header(); ?>
 <h1>Contact</h1>
 <div class="container large-text">
-  <div class="span-16">
+  <div class="<?php echo $roots_options['main_class']; ?>">
     <div class="unboxed first-unboxed">
       Please get in touch if you have suggestions or feature requests,
       have a service you think I should integrate with, have discovered a
       bug or just want to chat.
     </div>
   </div><!--/.span-16-->
-  <div class="span-8 last">
+  <div class="<?php echo $roots_options['sidebar_class']; ?>">
     <div class="boxed contact">
       <table>
         <tr>
