@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  $('.email').deobfuscate();
+  
   var drawingCanvas = document.getElementById('left-curve');
 
   // Check the element is in the DOM and the browser supports canvas
@@ -24,7 +26,7 @@ $(document).ready(function() {
     context.lineTo(0, 0);
     context.closePath();
     context.fill();
-  }
-
+  };
 });
 
+$('email').deobfuscate();

@@ -15,7 +15,7 @@ html, body, #wrap {height: 100%; }
 
 body > #wrap {height: auto; min-height: 100%;}
 
-#content-less-footer {padding-bottom: 118px; }  /* must be same height as the footer */
+#content-less-footer {padding-bottom: 148px; }  /* must be same height as the footer (or in this case +30) */
 
 /* CLEAR FIX*/
 .clearfix:after {content: ".";
@@ -30,7 +30,7 @@ visibility: hidden;}
 /* End hide from IE-mac */
 
 /* GENERAL*/
-a { color: #BED730; }
+a { color: #BED730; font-weight: bold;}
 a:hover, a:focus { color: #BED730; }
 a:hover, a:active { outline: none; }
 a:active, input.button:active { outline: 0; position: relative; top: 1px; }
@@ -38,6 +38,16 @@ a:active, input.button:active { outline: 0; position: relative; top: 1px; }
 ::-moz-selection { text-shadow: none; background: #888; color: #fff; }
 ::selection { text-shadow: none; background: #888; color: #fff; }
 a:link { -webkit-tap-highlight-color: #888; }
+
+body {font-size:75%;color:#433F40;background:#fff;font-family: Arial,Helvetica,sans-serif;}
+div.large-text {font-size: 116.7%;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#433F40;}
+h1 {font-size:2.5em;}
+h2 {font-size:2em;}
+h3 {font-size:1.5em;}
+h4 {font-size:1.333em;}
+h5 {font-size:1em;}
+h6 {font-size:1em;}
 
 body {
   text-align: center;
@@ -47,14 +57,12 @@ div#wrap {
   text-align: left;
 }
 
-body, textarea {
-  font-family: Arial,Helvetica,sans-serif;
-  font-size: small;
-  color: #433F40;
-}
-
 div.unboxed {
   padding: 13px;
+}
+
+div.first-unboxed {
+  padding-left: 0;
 }
 
 div.boxed {
@@ -82,10 +90,6 @@ div.large-divider {
   background: -webkit-gradient(radial, center -1200, 10, center -1200, 1230, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)), color-stop(90%, rgba(0, 0, 0, 0.1)));
   background: -webkit-radial-gradient(center -1200px, circle, rgba(0, 0, 0, 1) 10px, rgba(0, 0, 0, 0.1) 90%, rgba(0, 0, 0, 0) 1230px);
   background: -moz-radial-gradient(center -1200px, circle, rgba(0, 0, 0, 1) 10px, rgba(0, 0, 0, 0.1) 90%, rgba(0, 0, 0, 0) 1230px);
-  /*   background:    -moz-radial-gradient(45px 45px 45deg, circle cover, aqua 0%, rgba(0, 0, 255, 0) 100%, blue 95%);*/
-  /* background-image: -webkit-radial-gradient(50% 50%, circle cover, black 0%, black 100%);*/
-  /* background-image: -moz-radial-gradient(50% 50%, circle cover, black 0%, black 100%);*/
-  /* background-image: -webkit-radial-gradient(10px 10px 45deg, circle, cover, black, white);*/
   height: 30px;
   margin: 0 auto;
   margin-top: 50px;
@@ -205,7 +209,7 @@ div.large-divider {
 
 #nav-main ul li a {
   color: #999;
-  font-size: small;
+  font-size: 1em;
   text-transform: uppercase;
   text-decoration: none;
   display: block;
@@ -217,10 +221,6 @@ div.large-divider {
 #nav-main ul li:first-child a {
   border: none;
 }
-
-/* #nav-main ul li a:hover {*/
-/*   color: #BED730;*/
-/* }*/
 
 #nav-main ul li.current_page_item > a {
   pointer-events: none;
@@ -248,7 +248,7 @@ div.large-divider {
 
 header h1 {
   clear: both;
-  font-size: x-large;
+  font-size: 2em;
   color: #616161;
   padding: 40px 0 0 30px;
 }
@@ -261,23 +261,24 @@ header h1 {
 }
 
 .hero-copy h1 {
-  font-size: large;
+  font-size: 1.5em
 }
 
 .big-button {
+  border: none;
   display: inline-block;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
   -webkit-box-shadow:
-    0 8px 0 #ADC600,
-    0 15px 20px rgba(0,0,0,.35);
+  0 8px 0 #ADC600,
+  0 15px 20px rgba(0,0,0,.35);
   -moz-box-shadow:
-    0 8px 0 #ADC600,
-    0 15px 20px rgba(0,0,0,.35);
+  0 8px 0 #ADC600,
+  0 15px 20px rgba(0,0,0,.35);
   box-shadow:
-    0 8px 0 #ADC600,
-    0 15px 20px rgba(0,0,0,.35);
+  0 8px 0 #ADC600,
+  0 15px 20px rgba(0,0,0,.35);
 }
 
 .big-button span{
@@ -293,14 +294,14 @@ header h1 {
 
 .big-button:active {
   -webkit-box-shadow:
-    0 8px 0 #ADC600,
-    0 12px 10px rgba(0,0,0,.3);
+  0 8px 0 #ADC600,
+  0 12px 10px rgba(0,0,0,.3);
   -moz-box-shadow:
-    0 8px 0 #ADC600,
-    0 12px 10px rgba(0,0,0,.3);
+  0 8px 0 #ADC600,
+  0 12px 10px rgba(0,0,0,.3);
   box-shadow:
-    0 8px 0 #ADC600,
-    0 12px 10px rgba(0,0,0,.3);
+  0 8px 0 #ADC600,
+  0 12px 10px rgba(0,0,0,.3);
 }
 
 .big-button:active span {
@@ -312,7 +313,7 @@ header h1 {
 
 .big-button span strong {
   text-transform: uppercase;
-  font-size: large;
+  font-size: 1.5em;
 }
 
 .big-button a,
@@ -323,12 +324,12 @@ header h1 {
 }
 
 #content input {
-border: #DADADA 1px solid;
-width: 245px;
-height: 32px;
-margin-bottom: 18px;
-color: #969696;
-padding-left: 18px;
+  border: #DADADA 1px solid;
+  width: 245px;
+  height: 32px;
+  margin-bottom: 18px;
+  color: #969696;
+  padding-left: 18px;
 }
 
 div.quotes {
@@ -354,11 +355,34 @@ div.benefits li:first-child {
 
 div.benefits h2 {
   color: #616161;
-  font-size: large;
+  font-size: 1.5em;
   display: inline;
-  border-right: 3px solid #616161;
+  border-right: 2px solid #616161;
   font-weight: bold;
   padding-right: 10px;
   margin-right: 10px;
 }
 
+/* Contact Page*/
+
+
+div.contact h2 {
+  color: #616161;
+  font-size: 1em;
+  display: inline;
+  font-weight: bold;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+div.contact tbody tr:nth-child(even) td, div.contact  tbody tr.even td {
+  background: #FFF;
+}
+
+div.contact td {
+  vertical-align: top;
+}
+
+div.contact table {
+
+}
