@@ -457,3 +457,18 @@ div.contact table {
   background-repeat: no-repeat;
   background-position-y: 50%
 }
+
+div.tagcloud a {
+  color: #636363;
+  text-decoration: none;
+}
+
+div.tagcloud a:hover, div.tagcloud a:focus { color: #BED730; }
+div.tagcloud a:hover, div.tagcloud a:active { outline: none; }
+div.tagcloud a:active {
+  outline: 0;
+  position: relative;
+  top: 1px;
+  color: #BED730;
+}
+
