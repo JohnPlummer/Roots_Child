@@ -30,7 +30,11 @@ visibility: hidden;}
 /* End hide from IE-mac */
 
 /* GENERAL*/
-a { color: #BED730; font-weight: bold;}
+a {
+  font-weight: bold;
+  color: #433F40;
+  text-decoration: none;
+}
 a:hover, a:focus { color: #BED730; }
 a:hover, a:active { outline: none; }
 a:active, input.button:active {
@@ -403,8 +407,11 @@ div.contact table {
   padding: 3px 0px 10px 35px;
 }
 
-
 #content #searchform input#searchsubmit.button {
+  width: 70px;
+}
+
+#content input.button {
   border: none;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -413,14 +420,15 @@ div.contact table {
   background-color: #BED730;
   color: black;
   text-shadow: none;
-  width: 70px;
   background-image: none;
-  float: right;
   font-size: 100%;
   font: inherit;
+}
+
+#content #sidebar #searchform input#searchsubmit.button {
+  float: right;
   vertical-align: baseline;
-  margin-right: 28px;
-  margin-top: -18px;
+  margin: -18px 28px 8px 0;
 }
 
 .widget h3 {
@@ -431,44 +439,48 @@ div.contact table {
 }
 
 .widget_categories ul li a {
-  font-size: 14px;
+  font-size: 1.2em;
   line-height: 18px;
-  color: #636363;
-  font-weight: bold;
-  text-decoration: none;
 }
 
-.widget_categories ul li a:hover, .widget_categories ul li a:focus { color: #BED730; }
-.widget_categories ul li a:hover, .widget_categories ul li a:active { outline: none; }
-.widget_categories ul li a:active {
-  outline: 0;
-  position: relative;
-  top: 1px;
-  color: #BED730;
-}
-
-.widget_categories ul {
+.widget ul {
   list-style: none;
 }
-.widget_categories ul li {
+
+.widget ul li {
   padding-left: 23px;
+}
+
+.widget_categories ul li {
   margin-top: 4px;
   background-image: url(../img/box.gif);
   background-repeat: no-repeat;
   background-position-y: 50%
 }
 
-div.tagcloud a {
+.post {
+  padding-bottom: 30px;
+}
+
+.post h2 a {
+  font-weight: normal;
+}
+
+.post header time {
+  font-size: 100%;
   color: #636363;
-  text-decoration: none;
 }
 
-div.tagcloud a:hover, div.tagcloud a:focus { color: #BED730; }
-div.tagcloud a:hover, div.tagcloud a:active { outline: none; }
-div.tagcloud a:active {
-  outline: 0;
-  position: relative;
-  top: 1px;
-  color: #BED730;
+h1.entry-title {
+  font-size: 1.85em;
+  color: #433F40;
+  padding-left: 0;
 }
 
+form#commentform input.text {
+height: auto;
+}
+
+form#commentform textarea {
+  width: 390px;
+}
