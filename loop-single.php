@@ -5,7 +5,6 @@
 		<?php roots_post_inside_before(); ?>
 			<header>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
-				<time pubdate datetime="<?php the_time('c'); ?>"><?php printf( __('%s','roots'), get_the_time('l, F jS, Y') ) ?></time>
 			</header>
 			<div class="entry-content">
 				<?php the_content(); ?>

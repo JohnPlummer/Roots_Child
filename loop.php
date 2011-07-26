@@ -13,7 +13,6 @@
 		<?php roots_post_inside_before(); ?>
 			<header>
 				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-				<time pubdate datetime="<?php the_time('c'); ?>"><?php printf( __('%s','roots'), get_the_time('l, F jS, Y') ) ?></time>
 			</header>
 			<div class="entry-content">
 		<?php if (is_archive() || is_search()) : // Only display excerpts for archives and search ?>
