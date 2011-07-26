@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="hero-shot-content">
   <div class="<?php echo $roots_options['main_class']; ?>">
-    <div class="hero-shot boxed ">
+    <div class="hero-shot unboxed ">
       <img
       src="<?php echo get_stylesheet_directory_uri(); ?>/img/video.jpg"
       width="600" height="450"
@@ -10,12 +10,11 @@
   </div><!-- /.span-16 -->
   <div class="<?php echo $roots_options['sidebar_class']; ?>">
     <div class="hero-copy unboxed ">
-      <h1>This is the unique value proposition</h1>
+      <h1>Do less and get better results</h1>
       <div class="divider"></div>
-      <p>Furld is really really really really great.
-      It's not actually built yet but when it is it will be really great.</p>
-      <p>Submit your email so I can invite you to the beta and keep you up to date
-      on how Furld is coming along and what really great features there are.</p>
+      <p>Use the great tools that are popping up for startups
+      and use Furld to manage and synchronize your data between them.</p>
+      <p>Register to get early access and an occasional newsletter.</p>
       <div class="divider"></div>
 
       <form action="http://furld.us2.list-manage1.com/subscribe/post?u=1312d42d845c540499ef0ce6d&amp;id=321951a6f1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
@@ -29,7 +28,7 @@
         <div><button type="submit" id="mc-embedded-subscribe" class="big-button btn">
             <span>
               <strong>Get Early Access</strong>
-              <br/>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut
+              <br/>I promise your email will only be used to send a newsletter, updates, and an early access invitation.
             </span>
           </div>
         </form>
@@ -52,22 +51,21 @@
       <div class="benefits unboxed">
         <ul>
           <li>
-          <h2>Benefit 1</h2>
-          Nulla ac sem. Aenean suscipit. Proin eu purus quis turpis aliquam malesuada. Sed porta
-          nonummy metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-          ac turpis egestas Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
+          <h2>Turn prospects into customers</h2>
+          Track your prospects and automate follow up from one place using the tools you already know.
+          Automatically change your marketing message in response to a prospects actions.
+          Change the timing of your response to create the best impact on your prospect.
           </li>
           <li>
-          <h2>Benefit 2</h2>
-          Nulla ac sem. Aenean suscipit. Proin eu purus quis turpis aliquam malesuada. Sed porta
-          nonummy metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-          ac turpis egestas Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
+          <h2>Increase revenue per customer</h2>
+          Segment your customer base and customize the message and timing to each segment.
+          Time your marketing around customers payment schedules to maximize retention and revenue.
           </li>
           <li>
-          <h2>Benefit 3</h2> 
-          Nulla ac sem. Aenean suscipit. Proin eu purus quis turpis aliquam malesuada. Sed porta
-          nonummy metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-          ac turpis egestas Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
+          <h2>Access information fast</h2> 
+          See reports containing data combined from all the tools you use.
+          Get an overview of your business before drilling down into the data from an individual tool.
+          Ensure that prospect and customer information is synchronized between the services and tools you use.
           </li>
         </div>
       </div>

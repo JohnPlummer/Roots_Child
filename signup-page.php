@@ -3,13 +3,13 @@
 Template Name: Signup Page
  */
 get_header(); ?>
-<h1>Signup</h1>
+<h1>Sign Up</h1>
 <div class="container large-text">
   <div class="<?php echo $roots_options['main_class']; ?>">
     <div class="unboxed first-unboxed">
-      If you're interested early access, or would just like to be kept updated,
-      please sign up. I'll send you the occasional email to let you know how
-      Furld is progressing and I'll register you for early access.
+      <p>Use the great tools that are popping up for startups
+      and use Furld to manage and synchronize your data between them.</p>
+      <p>Register to get early access and an occasional newsletter.</p>
     </div>
   </div><!--/.span-16-->
   <div class="<?php echo $roots_options['sidebar_class']; ?>">
@@ -25,7 +25,7 @@ get_header(); ?>
         <div><button type="submit" id="mc-embedded-subscribe" class="big-button btn">
             <span>
               <strong>Get Early Access</strong>
-              <br/>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut
+              <br/>I promise your email will only be used to send a newsletter, updates, and an early access invitation.
             </span>
           </div>
         </form>
