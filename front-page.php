@@ -38,14 +38,6 @@
   <div class="span-24 last">
     <div class="large-divider"></div>
     <div class="span-8 append-1">
-      <div class="quotes boxed">
-        <p>Vivamus vitae turpis. Phasellus elementum posuere augue. Aenean rhoncus sollicitudin augue.
-        Duis risus. Nam quis enim vel lectus dictum sollicitudin. Ut sagittis, dolor eu molestie lacinia,
-        lorem ante ullamcorper augue, at rutrum leo odio vitae eros. Integer aliquam risus sodales leo.</p>
-        <p>Vivamus vitae turpis. Phasellus elementum posuere augue. Aenean rhoncus sollicitudin augue.
-        Duis risus. Nam quis enim vel lectus dictum sollicitudin. Ut sagittis, dolor eu molestie lacinia,
-        lorem ante ullamcorper augue, at rutrum leo odio vitae eros. Integer aliquam risus sodales leo.</p>
-      </div>
     </div>
     <div class="<?php echo $roots_options['main_class']; ?> last">
       <div class="benefits unboxed">
